@@ -1,0 +1,243 @@
+{
+  "schema_version": 1,
+  "metadata_checked": "2026-11-26",
+  "categories": [
+    {
+      "id": "discovery-search",
+      "title": "Discovery & Search",
+      "description": "Find, index, inspect, and resume historical sessions across projects or agents."
+    },
+    {
+      "id": "viewing-replay",
+      "title": "Viewing & Replay",
+      "description": "Turn raw session logs into readable, auditable, or shareable timelines."
+    },
+    {
+      "id": "export-migration-handoff",
+      "title": "Export, Migration & Handoff",
+      "description": "Move session content between files, machines, clients, or agent formats."
+    },
+    {
+      "id": "session-management",
+      "title": "Session Management",
+      "description": "Run, group, switch, monitor, or preserve multiple active coding-agent sessions."
+    },
+    {
+      "id": "analytics-cost",
+      "title": "Analytics & Cost",
+      "description": "Analyze activity, tokens, cost, and recurring patterns from local session data."
+    }
+  ],
+  "projects": [
+    {
+      "name": "Agent Sessions",
+      "repository": "jazzyalex/agent-sessions",
+      "category": "discovery-search",
+      "summary": "Local-first macOS app for browsing, searching, analyzing, and resuming coding-agent session history.",
+      "agents": ["Claude Code", "Codex", "OpenCode", "Cursor", "Copilot CLI", "Pi", "Kimi Code", "Other"],
+      "interfaces": ["macOS app"],
+      "capabilities": ["Browse", "Search", "Resume", "Analytics", "Recovery"],
+      "best_for": "Developers who want one local visual history across many coding agents.",
+      "license": "MIT",
+      "stars_snapshot": 953,
+      "verified_at": "2026-11-26",
+      "source": "https://github.com/jazzyalex/agent-sessions"
+    },
+    {
+      "name": "Codex History",
+      "repository": "nishantdesai/codex-history",
+      "category": "discovery-search",
+      "summary": "Read-only CLI for searching, inspecting, and exporting locally stored Codex sessions.",
+      "agents": ["Codex"],
+      "interfaces": ["CLI"],
+      "capabilities": ["Search", "Index", "Inspect", "Export", "Redaction"],
+      "best_for": "Terminal users who need conservative, scriptable access to Codex history.",
+      "license": "MIT",
+      "stars_snapshot": 10,
+      "verified_at": "2026-11-26",
+      "source": "https://github.com/nishantdesai/codex-history"
+    },
+    {
+      "name": "Codex History Viewer",
+      "repository": "HizTam/codex-history-viewer",
+      "category": "discovery-search",
+      "summary": "VS Code extension for searching, organizing, inspecting, and resuming Codex and Claude Code sessions.",
+      "agents": ["Codex", "Claude Code"],
+      "interfaces": ["VS Code"],
+      "capabilities": ["Browse", "Search", "Resume", "Analytics", "Handoff"],
+      "best_for": "VS Code users who want session history integrated with their editor workflow.",
+      "license": "MIT",
+      "stars_snapshot": 49,
+      "verified_at": "2026-11-26",
+      "source": "https://github.com/HizTam/codex-history-viewer"
+    },
+    {
+      "name": "sessions",
+      "repository": "nicknisi/sessions",
+      "category": "discovery-search",
+      "summary": "Unified full-text search, resume, MCP recall, and usage reporting over multiple coding-agent histories.",
+      "agents": ["Claude Code", "Codex", "Pi", "OpenCode"],
+      "interfaces": ["CLI", "MCP", "HTML report"],
+      "capabilities": ["Search", "Resume", "MCP recall", "Analytics", "Memory"],
+      "best_for": "Developers who want searchable history to double as agent-accessible project memory.",
+      "license": "MIT",
+      "stars_snapshot": 53,
+      "verified_at": "2026-11-26",
+      "source": "https://github.com/nicknisi/sessions"
+    },
+    {
+      "name": "Claude Code Trace",
+      "repository": "delexw/claude-code-trace",
+      "category": "viewing-replay",
+      "summary": "Cross-platform viewer for browsing, searching, and live-tailing Claude Code JSONL session logs.",
+      "agents": ["Claude Code"],
+      "interfaces": ["Desktop", "Web", "TUI"],
+      "capabilities": ["Browse", "Search", "Live tail", "Tool inspection", "Token inspection"],
+      "best_for": "Local debugging and real-time inspection of Claude Code sessions.",
+      "license": "MIT",
+      "stars_snapshot": 392,
+      "verified_at": "2026-11-26",
+      "source": "https://github.com/delexw/claude-code-trace"
+    },
+    {
+      "name": "claude-replay",
+      "repository": "es617/claude-replay",
+      "category": "viewing-replay",
+      "summary": "Converts coding-agent transcripts into self-contained interactive HTML replays with optional redaction.",
+      "agents": ["Claude Code", "Codex", "Cursor", "Gemini CLI", "OpenCode", "Kimi Code"],
+      "interfaces": ["CLI", "Web editor", "HTML"],
+      "capabilities": ["Replay", "Export", "Share", "Redaction", "Live watch"],
+      "best_for": "Sharing, teaching, documenting, or reviewing agent sessions without video capture.",
+      "license": "MIT",
+      "stars_snapshot": 862,
+      "verified_at": "2026-11-26",
+      "source": "https://github.com/es617/claude-replay"
+    },
+    {
+      "name": "Recensa",
+      "repository": "S40911120/recensa",
+      "category": "viewing-replay",
+      "summary": "Self-hosted local web viewer that indexes Claude Code transcripts for reading, search, replay, and audit.",
+      "agents": ["Claude Code"],
+      "interfaces": ["Self-hosted web", "Docker"],
+      "capabilities": ["Index", "Browse", "Search", "Replay", "Audit"],
+      "best_for": "Private browser-based review of a large local Claude Code transcript archive.",
+      "license": "MIT",
+      "stars_snapshot": 73,
+      "verified_at": "2026-11-26",
+      "source": "https://github.com/S40911120/recensa"
+    },
+    {
+      "name": "Agent Session Resume",
+      "repository": "hacktivist123/agent-session-resume",
+      "category": "export-migration-handoff",
+      "summary": "Reusable agent skill and helper scripts for reconstructing prior work and continuing from historical transcripts.",
+      "agents": ["Claude Code", "Codex", "Cursor", "Antigravity", "OpenCode", "Copilot"],
+      "interfaces": ["Agent skill", "Python helpers"],
+      "capabilities": ["Resume", "Handoff", "Digest", "Task reconstruction"],
+      "best_for": "Cross-agent handoffs where the next agent must recover unfinished work safely.",
+      "license": "MIT",
+      "stars_snapshot": 243,
+      "verified_at": "2026-11-26",
+      "source": "https://github.com/hacktivist123/agent-session-resume"
+    },
+    {
+      "name": "Codex Session Export",
+      "repository": "MeXenon/codex-session-export",
+      "category": "export-migration-handoff",
+      "summary": "Terminal-native tool for selecting, filtering, and exporting local Codex JSONL sessions to Markdown.",
+      "agents": ["Codex"],
+      "interfaces": ["TUI", "CLI"],
+      "capabilities": ["Browse", "Filter", "Export", "Context extraction"],
+      "best_for": "Codex users who need fine-grained control over what enters an exported transcript.",
+      "license": "Apache-2.0",
+      "stars_snapshot": 129,
+      "verified_at": "2026-11-26",
+      "source": "https://github.com/MeXenon/codex-session-export"
+    },
+    {
+      "name": "Codex Session Exporter",
+      "repository": "linfanxxxx/codex-session-exporter",
+      "category": "export-migration-handoff",
+      "summary": "CLI for exporting Codex sessions to Markdown, HTML, or portable bundles and importing bundles elsewhere.",
+      "agents": ["Codex"],
+      "interfaces": ["CLI"],
+      "capabilities": ["Inspect", "Export", "Import", "Migrate", "Archive"],
+      "best_for": "Moving complete Codex sessions between clients or machines while preserving metadata.",
+      "license": "MIT",
+      "stars_snapshot": 20,
+      "verified_at": "2026-11-26",
+      "source": "https://github.com/linfanxxxx/codex-session-exporter"
+    },
+    {
+      "name": "UniSessions",
+      "repository": "vibheksoni/session-export",
+      "category": "export-migration-handoff",
+      "summary": "SDK-first converter for moving sessions among coding-agent formats and exporting training or trace datasets.",
+      "agents": ["Codex", "Claude Code", "Pi", "OpenCode", "Devin", "Factory", "Windsurf"],
+      "interfaces": ["Python SDK", "CLI", "MCP"],
+      "capabilities": ["Convert", "Export", "MCP recall", "Trace export"],
+      "best_for": "Developers building migration, recall, or dataset pipelines across agent formats.",
+      "license": "MIT",
+      "stars_snapshot": 24,
+      "verified_at": "2026-11-26",
+      "source": "https://github.com/vibheksoni/session-export"
+    },
+    {
+      "name": "Agent Deck",
+      "repository": "asheshgoplani/agent-deck",
+      "category": "session-management",
+      "summary": "Terminal command center for grouping, switching, forking, and monitoring active coding-agent sessions.",
+      "agents": ["Claude Code", "Codex", "OpenCode", "Gemini CLI", "Other CLIs"],
+      "interfaces": ["TUI", "Web"],
+      "capabilities": ["Manage", "Monitor", "Fork", "Archive", "Cost tracking"],
+      "best_for": "Developers coordinating many concurrent terminal-agent sessions across projects.",
+      "license": "MIT",
+      "stars_snapshot": 1308,
+      "verified_at": "2026-11-26",
+      "source": "https://github.com/asheshgoplani/agent-deck"
+    },
+    {
+      "name": "CCManager",
+      "repository": "kbwo/ccmanager",
+      "category": "session-management",
+      "summary": "TUI for managing multiple coding-agent sessions across projects and Git worktrees without requiring tmux.",
+      "agents": ["Claude Code", "Codex", "Gemini CLI", "Cursor", "Copilot CLI", "Cline", "OpenCode", "Kimi CLI"],
+      "interfaces": ["TUI"],
+      "capabilities": ["Manage", "Monitor", "Worktrees", "Session copy", "Hooks"],
+      "best_for": "Developers who want worktree-aware multi-agent session control in one terminal UI.",
+      "license": "MIT",
+      "stars_snapshot": 1281,
+      "verified_at": "2026-11-26",
+      "source": "https://github.com/kbwo/ccmanager"
+    },
+    {
+      "name": "ccusage",
+      "repository": "ccusage/ccusage",
+      "category": "analytics-cost",
+      "summary": "CLI that reads local coding-agent usage records and reports token consumption and estimated cost.",
+      "agents": ["Claude Code", "Codex", "OpenCode", "Gemini CLI", "Copilot CLI", "Kimi", "Other"],
+      "interfaces": ["CLI"],
+      "capabilities": ["Usage reports", "Cost reports", "Session reports", "Multi-agent aggregation"],
+      "best_for": "Teams or individuals comparing local token usage and cost across many agent CLIs.",
+      "license": "MIT",
+      "stars_snapshot": 19597,
+      "verified_at": "2026-11-26",
+      "source": "https://github.com/ccusage/ccusage"
+    },
+    {
+      "name": "Clawd Insights",
+      "repository": "yx0716/clawd-insights",
+      "category": "analytics-cost",
+      "summary": "Local-first dashboard for session timelines, AI-generated reviews, activity analysis, and analysis-cost tracking.",
+      "agents": ["Claude Code", "Codex", "Cursor", "Other"],
+      "interfaces": ["Desktop", "Web dashboard"],
+      "capabilities": ["Timeline", "Summaries", "Analytics", "Replay", "Cost tracking"],
+      "best_for": "macOS users who want qualitative reviews and timeline analytics over local sessions.",
+      "license": "AGPL-3.0",
+      "stars_snapshot": 44,
+      "verified_at": "2026-11-26",
+      "source": "https://github.com/yx0716/clawd-insights"
+    }
+  ]
+}
